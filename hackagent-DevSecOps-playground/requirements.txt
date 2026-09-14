@@ -1,0 +1,5 @@
+hackagent
+loguru
+pandas
+matplotlib
+litellm

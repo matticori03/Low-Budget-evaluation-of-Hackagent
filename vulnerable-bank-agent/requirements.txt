@@ -1,0 +1,10 @@
+langgraph>=0.1.0
+langchain-core>=0.2.0
+langchain-openai
+langchain-google-genai
+langchain-ollama
+langchain-anthropic
+fastapi
+uvicorn
+loguru
+litellm
