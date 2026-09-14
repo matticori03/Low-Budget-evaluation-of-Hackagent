@@ -20,7 +20,7 @@ def run_attack(attacker_model="huihui_ai/gemma-4-abliterated:12b", judge_model="
         ],
         "early_stop_on_success": True,
         
-        # Configurazione Modelli
+        # Model Configuration
         "attacker": get_agent_config(attacker_model),
         "step_generator": get_agent_config(attacker_model),
         "judges": [

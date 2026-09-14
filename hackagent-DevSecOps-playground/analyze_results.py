@@ -34,7 +34,7 @@ def load_jsonl(path):
                 try:
                     data.append(json.loads(line))
                 except Exception as e:
-                    logger.warning(f"Errore parsing riga in {path}: {e}")
+                    logger.warning(f"Error parsing line in {path}: {e}")
     return pd.DataFrame(data)
 
 def extract_run_data(logs_dir):
@@ -112,7 +112,7 @@ def generate_model_markdown_report(model_dir):
     # Build table based on available columns
     table_rows = []
     for s in strategies:
-        row_dict = {"Strategia": s}
+        row_dict = {"Strategy": s}
         if has_naked:
             vn = int(strat_naked.get(s, 0))
             row_dict["Naked (0/1)"] = vn
@@ -149,11 +149,11 @@ def generate_model_markdown_report(model_dir):
     report_path = os.path.join(model_dir, "results_table.md")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(md_content)
-    logger.info(f"Tabella salvata in: {report_path}")
+    logger.info(f"Table saved to: {report_path}")
     
     # Formatted console print
     print(f"\n=======================================================")
-    print(f" TABELLA RISULTATI: {target_name} ({attacker_name})")
+    print(f" RESULTS TABLE: {target_name} ({attacker_name})")
     print(f"=======================================================")
     if has_naked and has_hardened:
         print(f"{'Strategia':<18} | {'Naked (0/1)':<12} | {'Hardened (0/1)':<15} | {'Esito (Naked)':<15} | {'Esito (Hardened)'}")
@@ -178,16 +178,16 @@ def main():
     BASE_LOGS_DIR = os.path.join(PARENT_DIR, "evaluation_logs")
     
     if not os.path.exists(BASE_LOGS_DIR):
-        logger.error(f"Cartella log {BASE_LOGS_DIR} non trovata.")
+        logger.error(f"Log folder {BASE_LOGS_DIR} not found.")
         return
         
-    logger.info(f"Generazione tabelle binarie (0/1) da: {BASE_LOGS_DIR}")
+    logger.info(f"Generating binary tables (0/1) from: {BASE_LOGS_DIR}")
     
     for root, dirs, files in os.walk(BASE_LOGS_DIR):
         if "naked" in dirs or "hardened" in dirs:
             generate_model_markdown_report(root)
             
-    logger.info("Elaborazione completata!")
+    logger.info("Processing completed!")
 
 if __name__ == "__main__":
     main()

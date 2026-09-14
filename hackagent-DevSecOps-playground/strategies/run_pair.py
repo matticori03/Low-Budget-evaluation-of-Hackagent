@@ -44,10 +44,10 @@ def run_attack(attacker_model="huihui_ai/gemma-4-abliterated:12b", judge_model="
     }
     
     # 3. start
-    logger.info(f"Avvio del test di sicurezza con PAIR e Judge locale ({judge_model})...")
+    logger.info(f"Starting security test with PAIR and local Judge ({judge_model})...")
     results = agent.hack(attack_config=attack_config)
     
-    logger.success("Test PAIR completato con successo!")
+    logger.success("PAIR test completed successfully!")
     return results
 
 if __name__ == "__main__":

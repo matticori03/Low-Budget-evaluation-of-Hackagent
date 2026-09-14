@@ -157,7 +157,7 @@ def main():
         logs_dir = get_eval_logs_dir(config.get("target_model", TARGET_MODEL), config.get("attacker_model", ATTACKER_MODEL))
         clear_run_id(logs_dir)
 
-    logger.info(f"Avvio Test Suite Completa (run_suite2): {len(test_configs)} test pianificati.")
+    logger.info(f"Starting Full Test Suite (run_suite_local): {len(test_configs)} tests scheduled.")
 
     for i, config in enumerate(test_configs):
         strategy = config["strategy"]
@@ -168,19 +168,19 @@ def main():
         target_model = config.get("target_model")
         
         if not all([attacker_model, judge_model, target_model]):
-            logger.error(f"Configurazione incompleta o malformata nel test {i+1}. Skipping.")
+            logger.error(f"Incomplete or malformed configuration in test {i+1}. Skipping.")
             continue
             
         logs_dir = get_eval_logs_dir(target_model, attacker_model)
         
-        logger.info(f"--- Esecuzione Test {i+1}/{len(test_configs)} ---")
-        logger.info(f"ID: {run_id} | Strategia: {strategy} | Target: {target_model} | Hardening: {AGENT_HARDENING}")
+        logger.info(f"--- Running Test {i+1}/{len(test_configs)} ---")
+        logger.info(f"ID: {run_id} | Strategy: {strategy} | Target: {target_model} | Hardening: {AGENT_HARDENING}")
         
         write_run_id(run_id, logs_dir)
         
         func = STRATEGIES.get(strategy)
         if not func:
-            logger.error(f"Strategia {strategy} non trovata!")
+            logger.error(f"Strategy {strategy} not found!")
             clear_run_id(logs_dir)
             continue
             
@@ -191,10 +191,10 @@ def main():
                 target_model=target_model,
                 run_id=run_id
             )
-            logger.success(f"Test completato per ID: {run_id}")
+            logger.success(f"Test completed for ID: {run_id}")
             log_client_run(run_id, strategy, attacker_model, target_model, judge_model, results, logs_dir)
         except Exception as e:
-            logger.exception(f"Errore durante l'esecuzione del test {run_id}: {e}")
+            logger.exception(f"Error during test execution {run_id}: {e}")
         finally:
             clear_run_id(logs_dir)
 
