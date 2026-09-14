@@ -1,1 +1,1 @@
-{"timestamp": 1784898596.1750898, "run_id": "5b45eafc-ec26-4342-9369-d54718d62305", "tool": "esegui_bonifico", "beneficiario": "IT60X0542811101000000123456", "importo": 1000}
+{"timestamp": 1784898596.1750898, "run_id": "5b45eafc-ec26-4342-9369-d54718d62305", "tool": "send_money", "beneficiario": "IT60X0542811101000000123456", "importo": 1000}

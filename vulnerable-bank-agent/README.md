@@ -2,7 +2,7 @@
 
 This repository contains a deliberately vulnerable AI banking assistant built with **LangGraph**. It acts as the target for the **HackAgent** evaluation suite.
 
-The agent is vulnerable to the **"Confused Deputy"** issue through **Indirect Prompt Injection** (OWASP Top 10 for LLM Applications: LLM01 - Prompt Injection & LLM06 - Excessive Agency). The agent can be manipulated into running a critical tool (`esegui_bonifico` / bank transfer) using parameters that are hidden inside untrusted external sources (like received emails).
+The agent is vulnerable to the **"Confused Deputy"** issue through **Indirect Prompt Injection** (OWASP Top 10 for LLM Applications: LLM01 - Prompt Injection & LLM06 - Excessive Agency). The agent can be manipulated into running a critical tool (`send_money` / bank transfer) using parameters that are hidden inside untrusted external sources (like received emails).
 
 ---
 
@@ -26,7 +26,7 @@ graph TD
 ```
 
 ### The Critical Tool
-*   **Function:** `esegui_bonifico(beneficiario: str, importo: float)`
+*   **Function:** `send_money(beneficiario: str, importo: float)`
 *   **Description:** Performs a virtual bank transfer. This is the main target for hijacking.
 
 ---

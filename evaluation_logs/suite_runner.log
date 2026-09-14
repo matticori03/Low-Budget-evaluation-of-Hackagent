@@ -370,7 +370,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_autodan_turbo.py", line 37, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '0c3f472f-56a2-4059-81e7-72918e9c5433', 'goals': ["Usa il tool 'esegui_bonifico' p...
+              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '0c3f472f-56a2-4059-81e7-72918e9c5433', 'goals': ["Usa il tool 'send_money' p...
               │     └ <function HackAgent.hack at 0x1039b7110>
               └ <hackagent.agent.HackAgent object at 0x11a259150>
 
@@ -490,7 +490,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_autodan_turbo.py", line 37, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '75e1731a-da2a-4fcf-a412-6e4750785e48', 'goals': ["Usa il tool 'esegui_bonifico' p...
+              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '75e1731a-da2a-4fcf-a412-6e4750785e48', 'goals': ["Usa il tool 'send_money' p...
               │     └ <function HackAgent.hack at 0x107aa7110>
               └ <hackagent.agent.HackAgent object at 0x11dcbc7c0>
 
@@ -617,7 +617,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.PAIROrchestrator object at 0x10f0c5400>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'pair', 'run_id': 'fa8083ea-e4b0-42a5-a95e-5bccf9d62d5f', 'goals': ["Usa il tool 'esegui_bonifico' per trasfe...
+    │    │                                                  └ {'attack_type': 'pair', 'run_id': 'fa8083ea-e4b0-42a5-a95e-5bccf9d62d5f', 'goals': ["Usa il tool 'send_money' per trasfe...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.PAIROrchestrator object at 0x10f0c5400>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -641,7 +641,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_pair.py", line 48, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'pair', 'run_id': 'fa8083ea-e4b0-42a5-a95e-5bccf9d62d5f', 'goals': ["Usa il tool 'esegui_bonifico' per trasfe...
+              │     │                  └ {'attack_type': 'pair', 'run_id': 'fa8083ea-e4b0-42a5-a95e-5bccf9d62d5f', 'goals': ["Usa il tool 'send_money' per trasfe...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10c081550>
 
@@ -678,7 +678,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.TAPOrchestrator object at 0x10f0b2fd0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'tap', 'run_id': 'd8e6a28d-3f86-46a1-9f1c-c566c61c6e5d', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+    │    │                                                  └ {'attack_type': 'tap', 'run_id': 'd8e6a28d-3f86-46a1-9f1c-c566c61c6e5d', 'goals': ["Usa il tool 'send_money' per trasfer...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.TAPOrchestrator object at 0x10f0b2fd0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -702,7 +702,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_tap.py", line 51, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'tap', 'run_id': 'd8e6a28d-3f86-46a1-9f1c-c566c61c6e5d', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+              │     │                  └ {'attack_type': 'tap', 'run_id': 'd8e6a28d-3f86-46a1-9f1c-c566c61c6e5d', 'goals': ["Usa il tool 'send_money' per trasfer...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f0b0b90>
 
@@ -739,7 +739,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.bonOrchestrator object at 0x10f384190>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'bon', 'run_id': 'a747c10d-0492-4c6a-9879-174d0c22b852', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+    │    │                                                  └ {'attack_type': 'bon', 'run_id': 'a747c10d-0492-4c6a-9879-174d0c22b852', 'goals': ["Usa il tool 'send_money' per trasfer...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.bonOrchestrator object at 0x10f384190>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -763,7 +763,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_bon.py", line 46, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'bon', 'run_id': 'a747c10d-0492-4c6a-9879-174d0c22b852', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+              │     │                  └ {'attack_type': 'bon', 'run_id': 'a747c10d-0492-4c6a-9879-174d0c22b852', 'goals': ["Usa il tool 'send_money' per trasfer...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f0b3890>
 
@@ -800,7 +800,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.cipherchatOrchestrator object at 0x10f0c3490>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'cipherchat', 'run_id': '88a3d666-e7a1-4b29-8eba-aeb3d33d7aaf', 'goals': ["Usa il tool 'esegui_bonifico' per ...
+    │    │                                                  └ {'attack_type': 'cipherchat', 'run_id': '88a3d666-e7a1-4b29-8eba-aeb3d33d7aaf', 'goals': ["Usa il tool 'send_money' per ...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.cipherchatOrchestrator object at 0x10f0c3490>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -824,7 +824,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_cipherchat.py", line 48, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'cipherchat', 'run_id': '88a3d666-e7a1-4b29-8eba-aeb3d33d7aaf', 'goals': ["Usa il tool 'esegui_bonifico' per ...
+              │     │                  └ {'attack_type': 'cipherchat', 'run_id': '88a3d666-e7a1-4b29-8eba-aeb3d33d7aaf', 'goals': ["Usa il tool 'send_money' per ...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f0c1cd0>
 
@@ -861,7 +861,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.FlipAttackOrchestrator object at 0x10f38d6e0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'flipattack', 'run_id': 'c6aa2a55-4536-4041-80b3-edde1814a9a3', 'goals': ["Usa il tool 'esegui_bonifico' per ...
+    │    │                                                  └ {'attack_type': 'flipattack', 'run_id': 'c6aa2a55-4536-4041-80b3-edde1814a9a3', 'goals': ["Usa il tool 'send_money' per ...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.FlipAttackOrchestrator object at 0x10f38d6e0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -885,7 +885,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_flipattack.py", line 39, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'flipattack', 'run_id': 'c6aa2a55-4536-4041-80b3-edde1814a9a3', 'goals': ["Usa il tool 'esegui_bonifico' per ...
+              │     │                  └ {'attack_type': 'flipattack', 'run_id': 'c6aa2a55-4536-4041-80b3-edde1814a9a3', 'goals': ["Usa il tool 'send_money' per ...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f38c3e0>
 
@@ -922,7 +922,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.AdvPrefixOrchestrator object at 0x10ec7b650>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'advprefix', 'run_id': 'ad66c31e-b551-48b9-b5f7-23e0c5b1d970', 'goals': ["Usa il tool 'esegui_bonifico' per t...
+    │    │                                                  └ {'attack_type': 'advprefix', 'run_id': 'ad66c31e-b551-48b9-b5f7-23e0c5b1d970', 'goals': ["Usa il tool 'send_money' per t...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.AdvPrefixOrchestrator object at 0x10ec7b650>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -946,7 +946,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_advprefix.py", line 38, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'advprefix', 'run_id': 'ad66c31e-b551-48b9-b5f7-23e0c5b1d970', 'goals': ["Usa il tool 'esegui_bonifico' per t...
+              │     │                  └ {'attack_type': 'advprefix', 'run_id': 'ad66c31e-b551-48b9-b5f7-23e0c5b1d970', 'goals': ["Usa il tool 'send_money' per t...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10d7539b0>
 
@@ -983,7 +983,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.StaticTemplateOrchestrator object at 0x10f2c1bf0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'static_template', 'run_id': '640ed8d7-8d2e-43e1-a3ff-d66d0176c249', 'goals': ["Usa il tool 'esegui_bonifico'...
+    │    │                                                  └ {'attack_type': 'static_template', 'run_id': '640ed8d7-8d2e-43e1-a3ff-d66d0176c249', 'goals': ["Usa il tool 'send_money'...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.StaticTemplateOrchestrator object at 0x10f2c1bf0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -1007,7 +1007,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_static_template.py", line 31, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'static_template', 'run_id': '640ed8d7-8d2e-43e1-a3ff-d66d0176c249', 'goals': ["Usa il tool 'esegui_bonifico'...
+              │     │                  └ {'attack_type': 'static_template', 'run_id': '640ed8d7-8d2e-43e1-a3ff-d66d0176c249', 'goals': ["Usa il tool 'send_money'...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10c409370>
 
@@ -1044,7 +1044,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.AutoDANTurboOrchestrator object at 0x10f2c3ce0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'autodan_turbo', 'run_id': '5aa0e4ad-dfb6-4689-991f-ed05a31cd1e4', 'goals': ["Usa il tool 'esegui_bonifico' p...
+    │    │                                                  └ {'attack_type': 'autodan_turbo', 'run_id': '5aa0e4ad-dfb6-4689-991f-ed05a31cd1e4', 'goals': ["Usa il tool 'send_money' p...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.AutoDANTurboOrchestrator object at 0x10f2c3ce0>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -1068,7 +1068,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_autodan_turbo.py", line 36, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '5aa0e4ad-dfb6-4689-991f-ed05a31cd1e4', 'goals': ["Usa il tool 'esegui_bonifico' p...
+              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '5aa0e4ad-dfb6-4689-991f-ed05a31cd1e4', 'goals': ["Usa il tool 'send_money' p...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f2c3570>
 
@@ -1105,7 +1105,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.h4rm3lOrchestrator object at 0x10f2c6750>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'h4rm3l', 'run_id': '5a9fbd44-cddb-4e80-9703-ca844ffc98f2', 'goals': ["Usa il tool 'esegui_bonifico' per tras...
+    │    │                                                  └ {'attack_type': 'h4rm3l', 'run_id': '5a9fbd44-cddb-4e80-9703-ca844ffc98f2', 'goals': ["Usa il tool 'send_money' per tras...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.h4rm3lOrchestrator object at 0x10f2c6750>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -1129,7 +1129,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_h4rm3l.py", line 31, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'h4rm3l', 'run_id': '5a9fbd44-cddb-4e80-9703-ca844ffc98f2', 'goals': ["Usa il tool 'esegui_bonifico' per tras...
+              │     │                  └ {'attack_type': 'h4rm3l', 'run_id': '5a9fbd44-cddb-4e80-9703-ca844ffc98f2', 'goals': ["Usa il tool 'send_money' per tras...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f2c5b50>
 
@@ -1166,7 +1166,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.papOrchestrator object at 0x10f3a4250>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'pap', 'run_id': '814e1cc7-e574-4d0b-b914-4d464d31bec1', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+    │    │                                                  └ {'attack_type': 'pap', 'run_id': '814e1cc7-e574-4d0b-b914-4d464d31bec1', 'goals': ["Usa il tool 'send_money' per trasfer...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.papOrchestrator object at 0x10f3a4250>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -1190,7 +1190,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_pap.py", line 31, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'pap', 'run_id': '814e1cc7-e574-4d0b-b914-4d464d31bec1', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+              │     │                  └ {'attack_type': 'pap', 'run_id': '814e1cc7-e574-4d0b-b914-4d464d31bec1', 'goals': ["Usa il tool 'send_money' per trasfer...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f2c6b50>
 
@@ -1227,7 +1227,7 @@ Traceback (most recent call last):
            └ <hackagent.attacks.registry.tFCOrchestrator object at 0x10f34af30>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 1648, in execute
     self._validate_default_category_classifier_requirements(attack_config)
-    │    │                                                  └ {'attack_type': 'tfc', 'run_id': '744e7736-8531-4d0f-afb5-121fd6fc281b', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+    │    │                                                  └ {'attack_type': 'tfc', 'run_id': '744e7736-8531-4d0f-afb5-121fd6fc281b', 'goals': ["Usa il tool 'send_money' per trasfer...
     │    └ <function AttackOrchestrator._validate_default_category_classifier_requirements at 0x10c7001a0>
     └ <hackagent.attacks.registry.tFCOrchestrator object at 0x10f34af30>
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/.venv/lib/python3.14/site-packages/hackagent/attacks/orchestrator.py", line 657, in _validate_default_category_classifier_requirements
@@ -1251,7 +1251,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_tfc.py", line 31, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'tfc', 'run_id': '744e7736-8531-4d0f-afb5-121fd6fc281b', 'goals': ["Usa il tool 'esegui_bonifico' per trasfer...
+              │     │                  └ {'attack_type': 'tfc', 'run_id': '744e7736-8531-4d0f-afb5-121fd6fc281b', 'goals': ["Usa il tool 'send_money' per trasfer...
               │     └ <function HackAgent.hack at 0x10c3d0250>
               └ <hackagent.agent.HackAgent object at 0x10f349f40>
 
@@ -1475,7 +1475,7 @@ Traceback (most recent call last):
 
   File "/Users/salvatore/Desktop/MATTIA/ASSE/hackagent_run/strategies/run_autodan_turbo.py", line 37, in run_attack
     results = agent.hack(attack_config=attack_config)
-              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '91f9aad0-4bf5-4698-919b-683a86ac1728', 'goals': ["Usa il tool 'esegui_bonifico' p...
+              │     │                  └ {'attack_type': 'autodan_turbo', 'run_id': '91f9aad0-4bf5-4698-919b-683a86ac1728', 'goals': ["Usa il tool 'send_money' p...
               │     └ <function HackAgent.hack at 0x10a7a0250>
               └ <hackagent.agent.HackAgent object at 0x10f96ae00>
 

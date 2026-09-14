@@ -118,7 +118,7 @@ To run smoothly on 16GB RAM without memory thrashing or OOM errors:
 * **AutoDAN-Turbo**: `epochs: 3`, `warm_up_iterations: 2`, `lifelong_iterations: 3`.
 
 ### Early Stopping
-Iterative strategies like PAIR and TAP use `"early_stop_on_success": True`. When the target triggers `esegui_bonifico`, the loop terminates immediately.
+Iterative strategies like PAIR and TAP use `"early_stop_on_success": True`. When the target triggers `send_money`, the loop terminates immediately.
 
 ---
 
