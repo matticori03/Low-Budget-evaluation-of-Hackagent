@@ -116,35 +116,35 @@ def generate_model_markdown_report(model_dir):
         if has_naked:
             vn = int(strat_naked.get(s, 0))
             row_dict["Naked (0/1)"] = vn
-            row_dict["Esito (Naked)"] = "SUCCESS (1)" if vn == 1 else "BLOCKED (0)"
+            row_dict["Outcome (Naked)"] = "SUCCESS (1)" if vn == 1 else "BLOCKED (0)"
         if has_hardened:
             vh = int(strat_hardened.get(s, 0))
             row_dict["Hardened (0/1)"] = vh
-            row_dict["Esito (Hardened)"] = "SUCCESS (1)" if vh == 1 else "BLOCKED (0)"
+            row_dict["Outcome (Hardened)"] = "SUCCESS (1)" if vh == 1 else "BLOCKED (0)"
         table_rows.append(row_dict)
         
     df_table = pd.DataFrame(table_rows)
     
     # Markdown Table Generation
-    md_content = f"# Tabella Risultati Valutazione Sicurezza\n"
+    md_content = f"# Security Evaluation Results Table\n"
     md_content += f"- **Target Model**: `{target_name}`\n"
     md_content += f"- **Attacker Model**: `{attacker_name}`\n\n"
     
     if has_naked and has_hardened:
-        md_content += "| Strategia | Naked (0/1) | Hardened (0/1) | Esito (Naked) | Esito (Hardened) |\n"
+        md_content += "| Strategy | Naked (0/1) | Hardened (0/1) | Outcome (Naked) | Outcome (Hardened) |\n"
         md_content += "| :--- | :---: | :---: | :--- | :--- |\n"
         for _, r in df_table.iterrows():
-            md_content += f"| **{r['Strategia']}** | {r['Naked (0/1)']} | {r['Hardened (0/1)']} | {r['Esito (Naked)']} | {r['Esito (Hardened)']} |\n"
+            md_content += f"| **{r['Strategy']}** | {r['Naked (0/1)']} | {r['Hardened (0/1)']} | {r['Outcome (Naked)']} | {r['Outcome (Hardened)']} |\n"
     elif has_hardened:
-        md_content += "| Strategia | Hardened (0/1) | Esito (Hardened) |\n"
+        md_content += "| Strategy | Hardened (0/1) | Outcome (Hardened) |\n"
         md_content += "| :--- | :---: | :--- |\n"
         for _, r in df_table.iterrows():
-            md_content += f"| **{r['Strategia']}** | {r['Hardened (0/1)']} | {r['Esito (Hardened)']} |\n"
+            md_content += f"| **{r['Strategy']}** | {r['Hardened (0/1)']} | {r['Outcome (Hardened)']} |\n"
     else:
-        md_content += "| Strategia | Naked (0/1) | Esito (Naked) |\n"
+        md_content += "| Strategy | Naked (0/1) | Outcome (Naked) |\n"
         md_content += "| :--- | :---: | :--- |\n"
         for _, r in df_table.iterrows():
-            md_content += f"| **{r['Strategia']}** | {r['Naked (0/1)']} | {r['Esito (Naked)']} |\n"
+            md_content += f"| **{r['Strategy']}** | {r['Naked (0/1)']} | {r['Outcome (Naked)']} |\n"
             
     report_path = os.path.join(model_dir, "results_table.md")
     with open(report_path, "w", encoding="utf-8") as f:
@@ -156,16 +156,16 @@ def generate_model_markdown_report(model_dir):
     print(f" RESULTS TABLE: {target_name} ({attacker_name})")
     print(f"=======================================================")
     if has_naked and has_hardened:
-        print(f"{'Strategia':<18} | {'Naked (0/1)':<12} | {'Hardened (0/1)':<15} | {'Esito (Naked)':<15} | {'Esito (Hardened)'}")
+        print(f"{'Strategy':<18} | {'Naked (0/1)':<12} | {'Hardened (0/1)':<15} | {'Outcome (Naked)':<15} | {'Outcome (Hardened)'}")
         print("-" * 85)
         for _, r in df_table.iterrows():
-            print(f"{r['Strategia']:<18} | {r['Naked (0/1)']:<12} | {r['Hardened (0/1)']:<15} | {r['Esito (Naked)']:<15} | {r['Esito (Hardened)']}")
+            print(f"{r['Strategy']:<18} | {r['Naked (0/1)']:<12} | {r['Hardened (0/1)']:<15} | {r['Outcome (Naked)']:<15} | {r['Outcome (Hardened)']}")
         print("-" * 85 + "\n")
     elif has_hardened:
-        print(f"{'Strategia':<18} | {'Hardened (0/1)':<15} | {'Esito (Hardened)'}")
+        print(f"{'Strategy':<18} | {'Hardened (0/1)':<15} | {'Outcome (Hardened)'}")
         print("-" * 55)
         for _, r in df_table.iterrows():
-            print(f"{r['Strategia']:<18} | {r['Hardened (0/1)']:<15} | {r['Esito (Hardened)']}")
+            print(f"{r['Strategy']:<18} | {r['Hardened (0/1)']:<15} | {r['Outcome (Hardened)']}")
         print("-" * 55 + "\n")
 
 # ==============================================================================
