@@ -10,7 +10,7 @@ os.environ["REQUEST_TIMEOUT"] = "1200"
 os.environ["OLLAMA_TIMEOUT"] = "1200"
 os.environ["AIOHTTP_CLIENT_TIMEOUT"] = "1200"
 
-# disable telemetry because it blocks threads and I hate it
+# disable telemetry because it blocks threads
 os.environ["LITELLM_LOG"] = "ERROR"
 
 import litellm

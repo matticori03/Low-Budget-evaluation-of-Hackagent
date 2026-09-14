@@ -68,8 +68,8 @@ Ensure you install dependencies first:
 pip install -r requirements.txt
 ```
 
-### Option 1: Standalone Simulation (Local)
-Run a local test of the indirect prompt injection without the HackAgent client suite:
+### Option 1: Standalone Interaction Test (Local)
+Run a quick local test asking the agent who it is and verifying its LangGraph response:
 
 ```bash
 # Example with Ollama and Naked Agent

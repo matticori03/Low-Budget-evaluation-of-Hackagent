@@ -146,6 +146,7 @@ def main():
         "target_model": TARGET_MODEL
     }
 
+    #start from a specific test to reduce costs
     start_from = os.environ.get("START_FROM", "").lower().strip()
     all_strategies = list(STRATEGIES.keys())
     

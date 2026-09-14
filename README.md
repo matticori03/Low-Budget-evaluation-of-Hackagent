@@ -23,7 +23,7 @@ Traditional automated red teaming often relies on expensive commercial API model
 8. [How to Run the Project](#how-to-run-the-project)
    * [Method A: Full Automated Benchmark (Recommended)](#method-a-full-automated-benchmark-recommended)
    * [Method B: Manual Execution (Two Terminals)](#method-b-manual-execution-two-terminals)
-   * [Method C: Standalone CLI Simulation](#method-c-standalone-cli-simulation)
+   * [Method C: Standalone CLI Test](#method-c-standalone-cli-test)
 9. [Telemetry, Ground-Truth Verification & Analytics](#telemetry-ground-truth-verification--analytics)
 10. [Empirical Evaluation Findings](#empirical-evaluation-findings)
 
@@ -267,8 +267,8 @@ python run_suite_local.py
 
 ---
 
-### Method C: Standalone CLI Simulation
-To test the indirect prompt injection without launching the client evaluation suite:
+### Method C: Standalone CLI Test
+To test basic agent interaction and connectivity without launching the evaluation suite:
 
 ```bash
 cd vulnerable-bank-agent
